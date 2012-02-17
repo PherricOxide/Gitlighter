@@ -1,1 +1,27 @@
-Nothing here yet, this project is just getting started. 
+   _____ _ _   _ _       _     _             
+  / ____(_) | | (_)     | |   | |            
+ | |  __ _| |_| |_  __ _| |__ | |_  ___ _ __ 
+ | | |_ | | __| | |/ _` | '_ \| __|/ _ \ '__|
+ | |__| | | |_| | | (_| | | | | |_|  __/ |   
+  \_____|_|\__|_|_|\__, |_| |_|\__|\___|_|   
+                    __/ |                    
+                   |___/                     
+
+
+Gitlighter is a simple TCL/Tk based viewer for 'git blame'. This project was a quick little script to help make weekly code reviews easier by displaying the output of git blame on selected files in the repository, and also highlight lines that have been modified in the last x days. 
+
+======================================
+Getting Dependencies
+======================================
+
+ $ sudo apt-get insstall tcl tk
+
+======================================
+Running
+======================================
+
+Currently gitlighter only has one argument, how many days old to count code lines as "new" and highlight them. For example,
+
+wish gitlighter.tcl 7
+
+Will let you choose the location of the repository (by selecting a file in the top level of it), and selected files will have any new or modified code from the last 7 days highlighted.
