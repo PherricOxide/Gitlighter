@@ -1,7 +1,7 @@
 #! /usr/bin/wish -f
 
 set gitExec "git"
-# Uncomment this for windows Vista +
+# Uncomment this for windows Vista + 
 # set gitExec "C:/Program Files (x86)/Git/bin/git.exe"
 
 if {[llength $argv] == 0} {
