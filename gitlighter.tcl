@@ -4,7 +4,13 @@ set gitExec "git"
 # Uncomment this for windows Vista +
 # set gitExec "C:/Program Files (x86)/Git/bin/git.exe"
 
-if {[llength $argv] == 0} {set days 7} else {set days [lindex $argv 0]}
+if {[llength $argv] == 0} {
+	set days 7
+	puts "Warning: No arguements given."
+	puts "Usage: wish gitlighter.tcl days"
+} else {
+	set days [lindex $argv 0]
+}
 
 proc dualScroll {arg1 arg2} {
     .code yview $arg1 $arg2
